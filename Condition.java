@@ -11,6 +11,13 @@ class Condition {
         // {
         //     System.out.println("False");
         // }
+        try{
+        int result = num1 / 0 ;
+        System.out.println(result);
+        }
+        catch(ArithmeticException e){
+            System.out.println("divider cann't be a zero");
+        }
         if(day.equals("satarday")) 
         {
              System.out.println("holiday");
