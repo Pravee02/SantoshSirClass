@@ -1,5 +1,6 @@
 
-public class Methods2 {
+class Methodss {
+
     int max(int x, int y) {
         if (x > y)
             return x;
@@ -7,12 +8,15 @@ public class Methods2 {
             return y;
     }
 
-    public static void main(String[] args) {
+    public class Methods2 {
 
-        Methods2 obj = new Methods2();
-        int a = 10;
-        int b = 20;
-        int result = obj.max(a, b);
-        System.out.println(result);
+        public static void main(String[] args) {
+
+            Methodss obj = new Methodss();
+            int a = 10;
+            int b = 20;
+            int result = obj.max(a, b);
+            System.out.println(result);
+        }
     }
 }
