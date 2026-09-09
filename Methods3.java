@@ -22,30 +22,24 @@ class Methodss {
 
 }
 
-public class Methods2 {
+public class Methods3 {
 
     public static void main(String[] args) {
 
-        // obj 1
-        Methodss obj1 = new Methodss();
-
         int l = 10;
         int m = 20;
-        int result = obj1.max(l, m);
+
+        Methodss obj = new Methodss();
+
+        int result = obj.max(l, m);
         System.out.println(result);
 
-        // obj 2
-        Methodss obj2 = new Methodss();
-        obj2.printSum(l, m);
+        obj.printSum(l, m);
 
-        // obj 3
-        Methodss obj3 = new Methodss();
-        int result1 = obj3.getNumber();
+        int result1 = obj.getNumber();
         System.out.println(result1);
 
-        // obj 4
-        Methodss obj4 = new Methodss();
-        obj4.display();
+        obj.display();
 
     }
 }
