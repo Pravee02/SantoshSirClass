@@ -57,9 +57,31 @@ class Square {
         System.out.println("the count of " + original + " is " + count);
     }
 
-}
+    // check palindrome or not
+    void palindromeOrNot(int n) {
 
-    
+        int original = n;
+        int rev = 0;
+        if (n == 0) {
+            System.out.println("the number is 0");
+        }
+
+        else {
+            while (n > 0) {
+                int digit = n % 10;
+                rev = rev * 10 + digit;
+                n = n / 10;
+            }
+
+        }
+        if (rev == original) {
+            System.out.println(original + " is palindrome");
+        } else {
+            System.out.println(original + " is not a palindrome");
+        }
+    }
+
+}
 
 public class HW_9_9_26 {
 
@@ -118,6 +140,31 @@ public class HW_9_9_26 {
 
         }
         System.out.println("the count of " + original + " is " + count);
+
+    }
+
+    // check palindrome or not
+    static void palindromeOrNot(int n) {
+
+        int original = n;
+        int rev = 0;
+        if (n == 0) {
+            System.out.println("the number is 0");
+        }
+
+        else {
+            while (n > 0) {
+                int digit = n % 10;
+                rev = rev * 10 + digit;
+                n = n / 10;
+            }
+
+        }
+        if (rev == original) {
+            System.out.println(original + " is palindrome");
+        } else {
+            System.out.println(original + " is not a palindrome");
+        }
     }
 
     public static void main(String[] args) {
@@ -155,6 +202,13 @@ public class HW_9_9_26 {
         // without object to count the numbers
         CountTheDigit(num);
         System.out.println();
+
+        // with object to check palindrome or not
+        int num1 = 151;
+        obj.palindromeOrNot(num1);
+
+        // without object to check palindrome or not
+        palindromeOrNot(num1);
 
     }
 }
