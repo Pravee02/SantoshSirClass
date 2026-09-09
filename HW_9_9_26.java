@@ -1,5 +1,11 @@
 class Square {
 
+    // adding two numbers
+    void printSum(int a, int b) {
+        int res = a + b;
+        System.out.println(a + " + " + b + " = " + res);
+    }
+
     // square of numbers
     int SquareOfNumbers(int n) {
         if (n <= 0) {
@@ -84,6 +90,12 @@ class Square {
 }
 
 public class HW_9_9_26 {
+
+    // add two numbers
+    static void printSum(int a, int b) {
+        int res = a + b;
+        System.out.println(a + " + " + b + " = " + res);
+    }
 
     // square of numbers
     static int SquareOfNumber(int num) {
@@ -209,6 +221,14 @@ public class HW_9_9_26 {
 
         // without object to check palindrome or not
         palindromeOrNot(num1);
+        System.out.println();
+
+        // with object to add two numbers
+        obj.printSum(a, b);
+
+        // without object to add two numbers
+        printSum(a, b);
+        System.out.println();
 
     }
 }
