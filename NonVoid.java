@@ -2,10 +2,16 @@ import java.util.*;
 
  class Instance{
 
+    
+
     // add two numbers using return instance
     int addTwoNumbers(int a, int b)
     {
+        System.out.println();
+      System.out.println("instance class");
+      System.out.println();
         int c = a + b;
+        System.out.print("the addition was  ");
         return c;
     }
     
@@ -55,11 +61,22 @@ import java.util.*;
 
     //palindrome or not using int instance
 
-    int palindrome(int num)
+    boolean palindrome(int num)
     {
         int reverse = 0;
+        int original = num;
+        while(num>0)
+        {
+            int digit = num % 10;
+            reverse = reverse * 10 + digit ;
+            num = num / 10;
+        }
+                
+            return reverse == original; 
         
+
     }
+}
 
 
 public class NonVoid{
@@ -69,6 +86,8 @@ public class NonVoid{
 
     static int addTwoNumbers(int a,int b)
     {
+        System.out.println();
+        System.out.println("main class means static ");
         int c = a + b;
         return c;
     }
@@ -115,7 +134,24 @@ public class NonVoid{
     }
 
 
-    //palindrome or not 
+    //palindrome or not  using static
+
+    
+    static boolean palindrome(int num)
+    {
+        int reverse = 0;
+        int original = num;
+        while(num>0)
+        {
+            int digit = num % 10;
+            reverse = reverse * 10 + digit ;
+            num = num / 10;
+        }
+                
+            return reverse == original; 
+        
+
+    }
 
 
     public static void main(String[] args) {
@@ -123,9 +159,52 @@ public class NonVoid{
         // take input and call
         Scanner sc = new Scanner(System.in);
         System.out.println("enter a number");
-        int n = sc.nextInt();
-        checkEvenOdd(n);
+        int a = sc.nextInt();
+        int b = 5;
+        int c = 10;
+        int num = 5364;
+
+        
+
+       int reuslt1 = addTwoNumbers( a , b);
+       System.out.println(reuslt1);
+
+        SquareOfNumber( a);
+        
+
+        int result3 = maxOfThree( a,  b, c);
+        System.out.println(result3);
+
+       int result4 =  countDigit( num);
+       System.out.println(result4);
+
+        boolean result5 = palindrome(num);
+        System.out.println(result5);
+
+
+
+
+        // object creation 
+
+       Instance obj = new Instance();
+
+        int res = obj.addTwoNumbers( a , b);
+       System.out.println(res);
+
+       obj.SquareOfNumber( a);
+        
+
+        int res1 = obj.maxOfThree( a,  b, c);
+        System.out.println(res1);
+
+       int res2 =  countDigit( num);
+       System.out.println(res2);
+
+        boolean res3 = obj.palindrome(num);
+        System.out.println(res3);
+
+        
 
     }
 }
-}
+
