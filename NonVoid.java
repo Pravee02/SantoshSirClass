@@ -1,10 +1,40 @@
 import java.util.*;
 
-public class NonVoid {
+ class Instance{
+
+    // add two numbers 
+
+    //square of numbers
+  // static void
+    
+
+    
+    //check max of three
+    //cout the digit
+    //palindrome or not 
+
+
+public class NonVoid{
+    
+
+    // add two numbers 
+    
+    //square of numbers
+
     // static void
-    static boolean isEvenOrAdd(int n) {
-        return n % 2 == 0;
+    static void checkEvenOdd(int n) {
+        if (n % 2 == 0) {
+            System.out.println("it is  even");
+        } else {
+            System.out.println("it is Odd");
+        }
     }
+
+
+    //check max of three
+    //cout the digit
+    //palindrome or not 
+
 
     public static void main(String[] args) {
 
@@ -12,13 +42,8 @@ public class NonVoid {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter a number");
         int n = sc.nextInt();
-        boolean result = isEvenOrAdd(n);
-        System.out.println(result);
-        if (result) {
-            System.out.println("even");
-        } else {
-            System.out.println("Odd");
-        }
+        checkEvenOdd(n);
 
     }
+}
 }

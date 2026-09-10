@@ -229,3 +229,5 @@ public static void main(String[] args) {
         // without object to add two numbers
         printSum(a, b);
         System.out.println();
+}
+}
