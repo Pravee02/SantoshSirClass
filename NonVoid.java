@@ -2,14 +2,41 @@ import java.util.*;
 
  class Instance{
 
-    // add two numbers 
+    // add two numbers ueing return
+    int addTwoNumbers(int a, int b)
+    {
+        int c = a + b;
+        return c;
+    }
+    
 
-    //square of numbers
-  // static void
+    //square of numbers using void
+
+    void SquareOfNumber(int a)
+    {
+        int s = a *a;
+        System.out.println("square of "+ a +" is " +s);
+    }
+
     
 
     
-    //check max of three
+    //check max of three using int
+    
+    int maxOfThree(int a, int b,int c)
+    {
+        if(a>b && a>c)
+        {
+            return a;
+        }
+        else if(b>c){
+            return b;
+        }
+        else{
+            return c;
+        }
+    }
+
     //cout the digit
     //palindrome or not 
 
@@ -18,8 +45,19 @@ public class NonVoid{
     
 
     // add two numbers 
+
+    static int addTwoNumbers(int a,int b)
+    {
+        int c = a + b;
+        return c;
+    }
     
     //square of numbers
+    static void SquareOfNumber(int b)
+    {
+        int a = b * b;
+        System.out.println("square of "+ b +" is " +a);
+    }
 
     // static void
     static void checkEvenOdd(int n) {
@@ -32,6 +70,20 @@ public class NonVoid{
 
 
     //check max of three
+
+    static int maxOfThree(int a, int b,int c)
+    {
+        if(a>b && a>c)
+        {
+            return a;
+        }
+        else if(b>c){
+            return b;
+        }
+        else{
+            return c;
+        }
+    }
     //cout the digit
     //palindrome or not 
 
