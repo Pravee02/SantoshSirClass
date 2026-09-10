@@ -179,7 +179,7 @@ public class HW_9_9_26 {
         }
     }
 
-    public static void main(String[] args) {
+public static void main(String[] args) {
         // without object square of numbers
         int a = 5;
         int b = 10;
@@ -229,6 +229,3 @@ public class HW_9_9_26 {
         // without object to add two numbers
         printSum(a, b);
         System.out.println();
-
-    }
-}
