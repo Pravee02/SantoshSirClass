@@ -2,7 +2,7 @@ import java.util.*;
 
  class Instance{
 
-    // add two numbers ueing return
+    // add two numbers using return instance
     int addTwoNumbers(int a, int b)
     {
         int c = a + b;
@@ -10,7 +10,7 @@ import java.util.*;
     }
     
 
-    //square of numbers using void
+    //square of numbers using void instance
 
     void SquareOfNumber(int a)
     {
@@ -21,7 +21,7 @@ import java.util.*;
     
 
     
-    //check max of three using int
+    //check max of three using int instance
     
     int maxOfThree(int a, int b,int c)
     {
@@ -37,8 +37,29 @@ import java.util.*;
         }
     }
 
-    //cout the digit
-    //palindrome or not 
+    //cout the digit using int instance
+
+    int countDigit(int num)
+    {
+        int count = 0;
+        while(num>0)
+        {
+            int a = num/10;
+            count += 1;
+            num = num/10;
+
+        }
+        return count;
+    }
+
+
+    //palindrome or not using int instance
+
+    int palindrome(int num)
+    {
+        int reverse = 0;
+        
+    }
 
 
 public class NonVoid{
@@ -52,24 +73,18 @@ public class NonVoid{
         return c;
     }
     
-    //square of numbers
+    //square of numbers static void 
     static void SquareOfNumber(int b)
     {
         int a = b * b;
         System.out.println("square of "+ b +" is " +a);
     }
 
-    // static void
-    static void checkEvenOdd(int n) {
-        if (n % 2 == 0) {
-            System.out.println("it is  even");
-        } else {
-            System.out.println("it is Odd");
-        }
-    }
+    
+   
 
 
-    //check max of three
+    //check max of three static int
 
     static int maxOfThree(int a, int b,int c)
     {
@@ -84,7 +99,22 @@ public class NonVoid{
             return c;
         }
     }
-    //cout the digit
+    //cout the digit static int
+
+   static int countDigit(int num)
+    {
+        int count = 0;
+        while(num>0)
+        {
+            int a = num/10;
+            count += 1;
+            num = num/10;
+
+        }
+        return count;
+    }
+
+
     //palindrome or not 
 
 
